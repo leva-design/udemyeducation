@@ -105,6 +105,103 @@ personalMovieDB.movies[c] = d;
 console.log(personalMovieDB);
 
 
+// Условия 
+
+if (4 == 4) {
+    console.log('ok');
+} else {
+    console.log('Error');
+}
+
+
+const num = 50;
+
+// if (num < 49) {
+//     console.log('Error');
+// } else if (num > 100) {
+//     console.log('too much');
+// } else {
+//     console.log('ok');
+// }
+
+
+// (num === 50) ? console.log('ok') : console.log('Error');
+
+// !!!!
+
+// switch (num) {
+//     case 49:
+//         console.log('Неверно');
+//         break;
+//     case 100:
+//         console.log('Too much');
+//         break;
+//     case 50:
+//         console.log('ok');
+//         break;
+//     default:
+//         console.log('try again later');
+//     break;
+// }
+
+// Доп урок к условиям
+
+// const hamburger = 5;
+// const fries = 0;
+
+// if (hamburger && fries) {
+//     console.log('I am ok');
+// } 
+
+// console.log((hamburger && fries));
+
+
+// const hamburger = 3;
+// const fries = 1;
+// const cola = 0;
+
+// console.log(hamburger === 3 && cola && fries);
+
+// console.log(1 && 0);
+// console.log(1 && 5);
+// console.log(null && 5);
+// console.log(0 && 'nfsjbshbsibw');
+
+
+
+// if (hamburger === 3 && cola === 1 && fries) {
+//     console.log('I am ok');
+// } else {
+//     console.log('we are coming back');
+// }
+
+// console.log((hamburger && fries));
+
+// Оператор && всегда возвращает первое ложное знаечение если оно есть на нем он запинается и код дальше уде не идет
+// Если все аргументы верны то возвращается знаечение последнего аргумента
+// В литре также можно встретить выражение И запинается на лжи, ИЛИ запинается на правде
+
+
+// Оператор ИЛИ
+const hamburger = 3;
+const fries = 3;
+const cola = 0;
+const nuggets = 2;
+
+if (hamburger === 3 && cola === 2 || fries === 3 && nuggets) {    // как только оператор ИЛИ находит правду он перестает работать
+    console.log('I am ok');          // Если вообще все не правда, то возвращается последнее ложное значение
+} else {
+    console.log('we are coming back');
+}
+
+let johnReport, alexReport, samReport, mariaReport = 'done';
+
+console.log(johnReport || alexReport || samReport || mariaReport);
+
+
+
+
+
 
 
 
