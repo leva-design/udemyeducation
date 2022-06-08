@@ -1,21 +1,21 @@
 "use strict";
 
-let number = 4.6 //Number
+// let number = 4.6 //Number
 
-console.log(4/0); //Infinity
+// console.log(4/0); //Infinity
 
-console.log(-4/0); // -Infinity
+// console.log(-4/0); // -Infinity
 
-console.log('string' * 9); //NaN - not a number
+// console.log('string' * 9); //NaN - not a number
 
-const person = 'Alex'; // String
+// const person = 'Alex'; // String
 
-const bool = true or false; //Boolean
+// const bool = true or false; //Boolean
 
-console.log(something) //Null Это когда чего то просто нету
+// console.log(something) //Null Это когда чего то просто нету
 
-let und;
-console.log(und); //Undefined Это когда что то есть, но это значение пустое
+// let und;
+// console.log(und); //Undefined Это когда что то есть, но это значение пустое
 
 
 // Объекты 
@@ -24,19 +24,19 @@ console.log(und); //Undefined Это когда что то есть, но эт�
 // Такой тип данных не зря называется комплексным, ведь в нем могут содержаться все типы данных
 
 
-const obj = {
+// const obj = {
     //Свойство(ключ):  Значение
-       name: 'John',
-       age: 25,
-       isMarried: false     
-}
+//        name: 'John',
+//        age: 25,
+//        isMarried: false     
+// }
 
 
 //console.log(obj.name); //John
 
-console.log(obj[name]); //Error 
+// console.log(obj[name]); //Error 
 
-console.log(obj['name']);
+// console.log(obj['name']);
 
 
 // ARRAY, массив является частным случаем объекта 
@@ -63,23 +63,29 @@ console.log(obj['name']);
 // };
 
 
-const result = confirm('');
+// const result = confirm('');
 
-alert('hello world');
+// alert('hello world');
 
-console.log('arr' + ' - object');
-
-
+// console.log('arr' + ' - object');
 
 
-let incr = 10;
-let decr = 10;
+
+
+// let incr = 10;
+// let decr = 10;
 
 // ++incr;
 // --decr;
 
-console.log(++incr); // 10 если мы поставим в постфиксную форму то консоль выдаст 10, потому что она сначала возвращает значение а потом увеличивает или уменьшает
-console.log(--decr); // 
+// console.log(++incr); // 10 если мы поставим в постфиксную форму то консоль выдаст 10, потому что она сначала возвращает значение а потом увеличивает или уменьшает
+// console.log(--decr); // 
+
+
+// lesson 19, practise
+
+const numberOfFilms = confirm('Сколько фильмов вы уже посмотрели?');
+
 
 
 
