@@ -86,7 +86,12 @@
 
 const numberOfFilms = confirm('Сколько фильмов вы уже посмотрели?');
 
-
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+}
 
 
 
