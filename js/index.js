@@ -40,7 +40,7 @@
 
 
 // ARRAY, массив является частным случаем объекта 
-                0          1         2       3        4 //Ключи уже заданы заранее в Массиве
+                // 0          1         2       3        4 //Ключи уже заданы заранее в Массиве
 // let arr = ['plum.png', 'orange.jpg', 7, 'apple.bmp', {}]; 
 
 // console.log(arr[1]); //Orange.jpg
@@ -94,27 +94,44 @@ const personalMovieDB = {
     privat: false
 };
 
-const a = prompt('Один из последних просмотренных фильмов?', ''),
-      b = prompt('На сколько оцените его?', ''),
-      c = prompt('Один из последних просмотренных фильмов?', ''),
-      d = prompt('На сколько оцените его?', '');
+for (let i = 0; i < 2; i++) {
+    const a = prompt('Один из последних просмотренных фильмов?', ''),
+          b = prompt('На сколько оцените его?', '');
 
-personalMovieDB.movies[a] = b;
-personalMovieDB.movies[c] = d;
+    if (a != null && b != null && a != '' && b != '' && a.length < 50) {
+            personalMovieDB.movies[a] = b;
+            console.log('done');
+    } else {
+            console.log('error');
+            i--;
+    }
+}
+
+
+if (personalMovieDB.count < 10) {
+    console.log('Вы просмотрели мало фильмов');
+} else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30) {
+    console.log('Вы классический зритель');
+} else if (personalMovieDB.count >= 30) {
+    console.log('Вы киноман');
+} else {
+    console.log('Error');
+}
+
 
 console.log(personalMovieDB);
 
 
 // Условия 
 
-if (4 == 4) {
-    console.log('ok');
-} else {
-    console.log('Error');
-}
+// if (4 == 4) {
+//     console.log('ok');
+// } else {
+//     console.log('Error');
+// }
 
 
-const num = 50;
+// const num = 50;
 
 // if (num < 49) {
 //     console.log('Error');
@@ -183,20 +200,100 @@ const num = 50;
 
 
 // Оператор ИЛИ
-const hamburger = 3;
-const fries = 3;
-const cola = 0;
-const nuggets = 2;
+// const hamburger = 3;
+// const fries = 3;
+// const cola = 0;
+// const nuggets = 2;
 
-if (hamburger === 3 && cola === 2 || fries === 3 && nuggets) {    // как только оператор ИЛИ находит правду он перестает работать
-    console.log('I am ok');          // Если вообще все не правда, то возвращается последнее ложное значение
-} else {
-    console.log('we are coming back');
-}
+// if (hamburger === 3 && cola === 2 || fries === 3 && nuggets) {    // как только оператор ИЛИ находит правду он перестает работать
+    // console.log('I am ok');          // Если вообще все не правда, то возвращается последнее ложное значение
+// } else {
+//     console.log('we are coming back');
+// }
 
-let johnReport, alexReport, samReport, mariaReport = 'done';
+// let johnReport, alexReport, samReport, mariaReport = 'done';
 
-console.log(johnReport || alexReport || samReport || mariaReport);
+// console.log(johnReport || alexReport || samReport || mariaReport);
+
+
+// Циклы    
+
+// let num = 50;
+
+// while (num < 55) {
+//     console.log(num);
+//     num++;
+// }
+
+
+
+// do {
+//     console.log(num);
+//     num++;
+// }
+
+// while (num < 55);
+
+
+// for (let i = 1; i < 10; i++) { // здесь в первом аргументе переменная, во втором значение при котором цикл остановится, в третьем условие что будет происходить с аргументом
+//    if (i === 6) {
+    //    break; // 12345
+    // continue; // 123456789 этот оператор позволяет пропустить шаг кототрый нам не нужен при этом не прирывая полностью цикл
+//    }
+//     console.log(i);
+// } 
+ 
+
+// Доп урок циклы в циклах
+
+// for (let i = 0; i < 3; i++) {
+//     console.log(i);
+//     for (let j = 0; j < 3; j++) {
+//         console.log(j);
+//     }
+// }
+
+
+// *
+// **
+// ***
+// ****
+// *****
+// ******
+
+// let result = '';
+// const length = 7;
+
+// for (let i = 1; i < length; i++) {
+
+//     for (let j = 0; j < i; j++) {
+//         result += '*';
+//     }
+
+//     result += '\n';
+// }
+
+// console.log(result);
+
+// метка 
+// first: for (let i = 1; i < length; i++) {
+//     console.log('first level: ${i}');
+//     for (let j = 0; j < i; j++) {
+//         console.log('second level: ${j}');
+//         for (let k = 0; k < i; k++) {
+//             if (k === 2) continue first;
+//             console.log('third level: ${k}');
+//         }
+//     }
+// }
+
+
+    // function firstTask() {
+    //     for (let i = 5; i < 11; i++) {
+    //         console.log(i);
+    //     }
+    // }
+
 
 
 
