@@ -84,42 +84,42 @@
 
 // lesson 19, practise
 
-const numberOfFilms = confirm('Сколько фильмов вы уже посмотрели?', '');
+// const numberOfFilms = confirm('Сколько фильмов вы уже посмотрели?', '');
 
-const personalMovieDB = {
-    count: numberOfFilms,
-    movies: {},
-    actors: {},
-    genres: [],
-    privat: false
-};
+// const personalMovieDB = {
+//     count: numberOfFilms,
+//     movies: {},
+//     actors: {},
+//     genres: [],
+//     privat: false
+// };
 
-for (let i = 0; i < 2; i++) {
-    const a = prompt('Один из последних просмотренных фильмов?', ''),
-          b = prompt('На сколько оцените его?', '');
+// for (let i = 0; i < 2; i++) {
+//     const a = prompt('Один из последних просмотренных фильмов?', ''),
+//           b = prompt('На сколько оцените его?', '');
 
-    if (a != null && b != null && a != '' && b != '' && a.length < 50) {
-            personalMovieDB.movies[a] = b;
-            console.log('done');
-    } else {
-            console.log('error');
-            i--;
-    }
-}
-
-
-if (personalMovieDB.count < 10) {
-    console.log('Вы просмотрели мало фильмов');
-} else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30) {
-    console.log('Вы классический зритель');
-} else if (personalMovieDB.count >= 30) {
-    console.log('Вы киноман');
-} else {
-    console.log('Error');
-}
+//     if (a != null && b != null && a != '' && b != '' && a.length < 50) {
+//             personalMovieDB.movies[a] = b;
+//             console.log('done');
+//     } else {
+//             console.log('error');
+//             i--;
+//     }
+// }
 
 
-console.log(personalMovieDB);
+// if (personalMovieDB.count < 10) {
+//     console.log('Вы просмотрели мало фильмов');
+// } else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30) {
+//     console.log('Вы классический зритель');
+// } else if (personalMovieDB.count >= 30) {
+//     console.log('Вы киноман');
+// } else {
+//     console.log('Error');
+// }
+
+
+// console.log(personalMovieDB);
 
 
 // Условия 
@@ -295,6 +295,45 @@ console.log(personalMovieDB);
     // }
 
 
+// Functions
+
+let num = 20;
+
+
+function showFirst(text) {
+    console.log(text);
+    let num = 10;
+    console.log(num);
+}
+
+showFirst('Hello World');
+
+function calc(a, b) {
+    return (a + b);
+    console.log('cdjs cjsc s cjs'); // unrediable code
+}
+
+console.log(calc(4, 3)); // 7
+console.log(calc(5, 6)); // 11
+console.log(calc(10, 3)); // 13
+
+
+
+function ret() { // Это функция как и переменная VAR существует уже до того как мы ее модем обьявить, создается до начала выполнение скрипта, можно вызвать перед обьявлением
+    let num = 50;  // Это называется FUNCTIONvDECLARATION, это обычная функция
+    return num;
+}
+
+const anotherNum = ret();
+console.log(anotherNum);
+
+
+const logger = function() { //Function Expression 
+                               // Создается только тогда, когда доходит поток кода. Можно вызвать только после обьявления
+    console.log('Hello');       // Так как Function Expression мы помещаем в переменную мы должны ставить двоеточие после фигурных скобок, потому что эта функция в переменной, в декларейшн мы не ставим семиколон
+};
+
+logger();
 
 
 
