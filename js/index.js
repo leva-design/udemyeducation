@@ -297,44 +297,134 @@
 
 // Functions
 
-let num = 20;
+// let num = 20;
 
 
-function showFirst(text) {
-    console.log(text);
-    let num = 10;
-    console.log(num);
-}
+// function showFirst(text) {
+//     console.log(text);
+//     let num = 10;
+//     console.log(num);
+// }
 
-showFirst('Hello World');
+// showFirst('Hello World');
 
-function calc(a, b) {
-    return (a + b);
-    console.log('cdjs cjsc s cjs'); // unrediable code
-}
+// function calc(a, b) {
+//     return (a + b);
+//     console.log('cdjs cjsc s cjs'); // unrediable code
+// }
 
-console.log(calc(4, 3)); // 7
-console.log(calc(5, 6)); // 11
-console.log(calc(10, 3)); // 13
-
-
-
-function ret() { // Это функция как и переменная VAR существует уже до того как мы ее модем обьявить, создается до начала выполнение скрипта, можно вызвать перед обьявлением
-    let num = 50;  // Это называется FUNCTIONvDECLARATION, это обычная функция
-    return num;
-}
-
-const anotherNum = ret();
-console.log(anotherNum);
+// console.log(calc(4, 3)); // 7
+// console.log(calc(5, 6)); // 11
+// console.log(calc(10, 3)); // 13
 
 
-const logger = function() { //Function Expression 
+
+// function ret() { // Это функция как и переменная VAR существует уже до того как мы ее модем обьявить, создается до начала выполнение скрипта, можно вызвать перед обьявлением
+//     let num = 50;  // Это называется FUNCTIONvDECLARATION, это обычная функция
+//     return num;
+// }
+
+// const anotherNum = ret();
+// console.log(anotherNum);
+
+
+// const logger = function() { //Function Expression 
                                // Создается только тогда, когда доходит поток кода. Можно вызвать только после обьявления
-    console.log('Hello');       // Так как Function Expression мы помещаем в переменную мы должны ставить двоеточие после фигурных скобок, потому что эта функция в переменной, в декларейшн мы не ставим семиколон
-};
+//     console.log('Hello');       // Так как Function Expression мы помещаем в переменную мы должны ставить двоеточие после фигурных скобок, потому что эта функция в переменной, в декларейшн мы не ставим семиколон
+// };
 
-logger();
+// logger();
 
+
+// const calc = (a, b) // или просто =>  {
+//      return a + b;
+// }
+
+
+// Доп урок к фкнкциям 
+
+// const usdCurr = 28;
+// const eurCurr = 32;
+
+
+// function convert(amount, curr) {
+//     console.log(curr * amount);
+// }
+
+// convert(500, usdCurr);
+// console.log(500, eurCurr);
+
+// Доп урок про важность return
+
+//     const usdCurr = 28;
+//     const discount = 0.9;
+
+
+//  function convert(amount, curr) {
+//         return curr * amount; 
+//     }
+
+//     function promotion(result) {
+//         console.log(curr * discount); 
+//     }
+
+//    const res = convert(500, usdCurr);
+//     promotion(res);
+
+//     function test() {
+//         for(let i = 0; i < 5; i++) {
+//             console.log(i);
+//             if (i === 3) return;
+//         }
+//         console.log("done");
+//     }
+
+//     test();
+
+
+
+//     function doo() {
+
+//     }
+
+//     console.log(doo() === undefined); // true
+
+
+// Методы и свойста у строк и чисел
+
+// const str = 'test';
+// const Array = [0, 1, 2];
+
+// console.log(str.length);   // или console.log(str[2]);  // это свойство 
+// console.log(Array.length);
+
+
+// console.log(str.toLowerCase());
+// console.log(str.toUpperCase()); // метод 
+
+
+// const fruit = 'Fruit some';
+
+// console.log(fruit.indexOf('m')); // 8    если мы ищем букву которой нету то выдаст -1
+
+// const logg = 'Hello World';
+
+// console.log(logg.slice(6, 11)); // worl  // Первый аругмент в slice, мы указываем с какой позиции мы хотим начать.
+                            // второй аргумент мы говорим где заканчивать вырезание этого кусочка^ не включая
+                            // если мы укажем один аргумент, то оно обрежет слово начиная с этой строки 
+
+            
+// console.log(logg.substring(6, 11)); // тоже самое 
+// console.log(logg.substr(6, 5)); // это говорит сколько символов мне нудно вырезать 
+
+// const num = 12.2;
+
+// console.log(Math.round(num)); // округляет до ближайшего целого числа
+
+const test = '12.2px';
+
+console.log(parseInt(test));     // 12 и уже числовой тип данных
+console.log(parseFloat(test));  // 12.2
 
 
 
