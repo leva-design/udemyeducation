@@ -542,3 +542,44 @@
 //     }
 // }
 // console.log(counter);
+
+// массивы и псевдомассивы (33)
+
+// const arr = [1, 2, 3, 6, 8];
+// arr[99] = 0;                    // не делать так 
+// console.log(arr.length);
+// console.log(arr);
+
+// arr.forEach(function(item, i, arr) {
+//     console.log(`${i}: ${item} внутри массива ${arr}`);
+// });
+
+
+
+// arr.pop();
+// arr.push(10);
+
+// console.log(arr);
+
+// for (let i = 0; i < arr.length; i++) {
+//     console.log(arr[i]);
+// }
+
+// for (let value of arr) {
+//     console.log(value);
+// }
+
+// const str = prompt('', '');
+// const products = str.split(', '); // указываем символ через которые юзер будет вовдить символы, мы должны это знать заранее 
+// products.sort(); // все отсартируется в алфавитном порядке, и сортирует данные в нем как строки
+// console.log(products.join('; ')); // указываем знак через который елементы массива  будут выводиться
+
+
+
+// const arr = [10, 2, 12, 26, 8]; // 10, 12, 2, 26, 8 отсортировался как строки
+// arr.sort(compareNum);
+// console.log(arr);
+
+// function compsreNum(a, b) {
+//     return a - b;
+// }
